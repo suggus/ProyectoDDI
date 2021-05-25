@@ -14,11 +14,12 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.ejercicio_14.QuizTest.Quiz
 import com.example.ejercicio_14.QuizTest.QuizQuestionsActivity
 
 class Adaptador3(
     private val context: MainActivity,
-    private val myDataset: List<Pelicula>,
+    private val myDataset: List<Quiz>,
     val actividad: Activity
 ) :
     RecyclerView.Adapter<Adaptador3.ViewHolder>() {

@@ -29,25 +29,37 @@ public abstract class QuestionRoomDatabase : RoomDatabase() {
                     // Add sample questions.
                     var question = Question(
                         1,
-                        "Cuánto son 2+2?",
+                        "Cómo podemos recuperar datos de otra actividad?",
                         "1999",
-                        "3",
-                        "4",
-                        "6",
-                        "1",
+                        "Menu options",
+                        "ResultActivity",
+                        "Inflate bundle",
+                        "StartActivity",
                         2
                     )
                     questionDao.insert(question)
 
                     question = Question(
                         2,
-                        "Raiz de 144",
+                        "Cómo modificamos datos preference?",
                         "1999",
-                        "13",
-                        "11",
-                        "12",
-                        "14",
+                        "Modify data",
+                        "Update preferences",
+                        "Preferences.Editor",
+                        "Set bundle.get",
                         3
+                    )
+                    questionDao.insert(question)
+
+                    question = Question(
+                        3,
+                        "Cómo recuperar datos del bundle?",
+                        "1999",
+                        "getExtra",
+                        "getData",
+                        "bundle.getString",
+                        "return extra",
+                        1
                     )
                     questionDao.insert(question)
 

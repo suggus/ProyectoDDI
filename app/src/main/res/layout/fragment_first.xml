@@ -17,11 +17,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/big_padding"
-            android:fontFamily="sans-serif-light"
+            android:fontFamily="sans-serif-black"
             android:gravity="center"
             android:minHeight="@dimen/min_height"
             android:text="@string/hello_first_fragment"
-            android:textSize="18sp" />
+            android:textSize="30sp" />
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:contentDescription="imagen elefante"
+            android:src="@drawable/elephanticon" />
 
         <EditText
             android:id="@+id/et_usuario"
@@ -53,48 +60,57 @@
             android:background="@color/purple_500"
             android:text="@string/login"
             android:textColor="@color/white" />
-
-        <Button
-            android:id="@+id/button_menu"
+        <GridLayout
+            android:id="@+id/gridLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="Ver Menú" />
+            android:layout_gravity="center"
+            android:columnCount="2"
+            android:layout_marginTop="40dp">
 
-        <Button
-            android:id="@+id/button_first"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="@string/next" />
+            <Button
+                android:id="@+id/button_menu"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Ver Menú" />
 
-        <Button
-            android:id="@+id/button_third"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="@string/ver_pel_culas2" />
+            <Button
+                android:id="@+id/button_first"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/next" />
 
-        <Button
-            android:id="@+id/button_fifth"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="Ver Canciones 2" />
+            <Button
+                android:id="@+id/button_third"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/ver_pel_culas2" />
 
-        <Button
-            android:id="@+id/button_sixth"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="Ver Libros 2" />
+            <Button
+                android:id="@+id/button_fifth"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Mis Canciones" />
 
-        <Button
-            android:id="@+id/button_fourth"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="@string/ver_pel_culas3" />
+            <Button
+                android:id="@+id/button_sixth"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Mis Libros" />
+
+            <Button
+                android:id="@+id/button_fourth"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/ver_pel_culas3" />
+
+        </GridLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

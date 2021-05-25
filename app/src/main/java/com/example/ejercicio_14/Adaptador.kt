@@ -10,7 +10,7 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 
-class Adaptador(private val myDataSet: MutableList<Pelicula>, val actividad: Activity) :
+class Adaptador(private val myDataSet: MutableList<Tarea>, val actividad: Activity) :
     RecyclerView.Adapter<Adaptador.ViewHolder>() {
 
     inner class ViewHolder(v: View) : RecyclerView.ViewHolder(v) {
@@ -45,9 +45,7 @@ class Adaptador(private val myDataSet: MutableList<Pelicula>, val actividad: Act
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val pelicula = myDataSet[position]
-        holder.tvTitulo.text = pelicula.titulo
-        holder.tvGenero.text = pelicula.genero
-        holder.tvEstreno.text = pelicula.estreno
+        holder.tvTitulo.text = pelicula.tarea
         holder.posicion = position
     }
 
@@ -59,7 +57,7 @@ class Adaptador(private val myDataSet: MutableList<Pelicula>, val actividad: Act
         myDataSet.removeAt(holder.adapterPosition)
         notifyItemRemoved(holder.adapterPosition)
 
-        Snackbar.make(holder.itemView,"${removedItem.titulo} deleted", Snackbar.LENGTH_LONG).setAction("UNDO"){
+        Snackbar.make(holder.itemView,"${removedItem.tarea} deleted", Snackbar.LENGTH_LONG).setAction("UNDO"){
             myDataSet.add(removedPosition, removedItem)
             notifyItemInserted(removedPosition)
         }.show()

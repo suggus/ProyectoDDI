@@ -25,27 +25,6 @@
         android:layout_margin="@dimen/big_padding"
         android:textSize="18sp" />
 
-    <EditText
-        android:id="@+id/et_genero_pelicula"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="@dimen/min_height"
-        android:fontFamily="sans-serif-light"
-        android:hint="@string/g_nero"
-        android:inputType="textAutoComplete"
-        android:layout_margin="@dimen/big_padding"
-        android:textSize="18sp" />
-
-    <EditText
-        android:id="@+id/et_estreno_pelicula"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="@dimen/min_height"
-        android:fontFamily="sans-serif-light"
-        android:hint="@string/estreno"
-        android:inputType="textAutoComplete"
-        android:layout_margin="@dimen/big_padding"
-        android:textSize="18sp" />
 
     <Button
         android:id="@+id/btt_insertar"

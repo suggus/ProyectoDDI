@@ -5,35 +5,25 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class VM : ViewModel () {
-    var dataset: MutableList<Pelicula> = mutableListOf()
+    var dataset: MutableList<Tarea> = mutableListOf()
     //val peliculaSeleccionada: MutableLiveData<Pelicula> = MutableLiveData()
 
     init {
         dataset = cargarPeliculas()
     }
 
-    private fun cargarPeliculas(): MutableList<Pelicula> {
-        val lista = mutableListOf<Pelicula>()
-        lista.add(Pelicula("", "Rambo I", "Acción", "1997"))
-        lista.add(Pelicula("", "Rambo II", "Acción", "1997"))
-        lista.add(Pelicula("", "Rambo III", "Acción", "1997"))
-        lista.add(Pelicula("", "Rambo IV", "Acción", "1997"))
-        lista.add(Pelicula("", "Rambo V", "Acción", "1996"))
-        lista.add(Pelicula("", "Rambo VI", "Acción", "1996"))
-        lista.add(Pelicula("", "Rambo VII", "Acción", "1996"))
-        lista.add(Pelicula("", "Rambo VIII", "Acción", "1996"))
-        lista.add(Pelicula("", "Rambo IX", "Acción", "1996"))
-        lista.add(Pelicula("", "Rambo X", "Acción", "1996"))
-        lista.add(Pelicula("", "Rambo XI", "Acción", "1996"))
-        lista.add(Pelicula("", "Rambo XII", "Acción", "1996"))
-        lista.add(Pelicula("", "Rambo XIII", "Acción", "1996"))
-        lista.add(Pelicula("", "Rambo XIV", "Acción", "1996"))
-        lista.add(Pelicula("", "Rambo XV", "Acción", "1996"))
+    private fun cargarPeliculas(): MutableList<Tarea> {
+        val lista = mutableListOf<Tarea>()
+        lista.add(Tarea("Comprar el periódico"))
+        lista.add(Tarea("Terminar el proyecto de Unity"))
+        lista.add(Tarea("Pedir cita IRPF"))
+        lista.add(Tarea("Reservar vuelo a Menorca"))
+        lista.add(Tarea("Cita con el médico"))
 
         return lista
     }
 
-    fun insertar(peli:Pelicula){
+    fun insertar(peli:Tarea){
         dataset.add(peli)
     }
 
@@ -43,11 +33,8 @@ class VM : ViewModel () {
         //Toast.makeText(this,"Quieres eliminar $peliEliminada ?",Toast.LENGTH_LONG)
     }
 
-    fun modificar(peli:Pelicula, posicion: Int){
-        dataset[posicion].titulo=peli.titulo
-        dataset[posicion].genero=peli.genero
-        dataset[posicion].estreno=peli.estreno
-
+    fun modificar(peli:Tarea, posicion: Int){
+        dataset[posicion].tarea=peli.tarea
     }
 
 }

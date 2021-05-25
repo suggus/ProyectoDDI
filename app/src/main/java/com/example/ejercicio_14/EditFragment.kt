@@ -39,43 +39,37 @@ class EditFragment : Fragment() {
         val bBorrar = view.findViewById<Button>(R.id.btt_borrar)
         val bModificar = view.findViewById<Button>(R.id.btt_modificar)
         val etTitulo = view.findViewById<EditText>(R.id.et_nombre_pelicula)
-        val etGenero = view.findViewById<EditText>(R.id.et_genero_pelicula)
-        val etEstreno = view.findViewById<EditText>(R.id.et_estreno_pelicula)
         val tvId = view.findViewById<TextView>(R.id.tv_Id)
         posicion = arguments?.getInt("id") ?: -1
-        var peli: Pelicula = Pelicula("", "", "", "")
+        var peli: Tarea = Tarea("")
 
         if (posicion == -1) {
             bBorrar.isEnabled = false
             bModificar.isEnabled = false
             bInsertar.isEnabled = true
-            activity?.setTitle("Insertar películas")
+            activity?.setTitle("Insertar tarea")
         } else {
             bBorrar.isEnabled = true
             bModificar.isEnabled = true
             bInsertar.isEnabled = false
-            activity?.setTitle("Modificar/Borrar películas")
+            activity?.setTitle("Modificar/Borrar tareas")
             peli = (activity as MainActivity).miViewModel.dataset[posicion]
             tvId.text = String.format("ID: $posicion")
-            etTitulo.setText(peli.titulo)
-            etGenero.setText(peli.genero)
-            etEstreno.setText(peli.estreno)
+            etTitulo.setText(peli.tarea)
         }
 
         bInsertar.setOnClickListener() {
-            if (etTitulo.text.isEmpty() || etGenero.text.isEmpty() || etEstreno.text.isEmpty()) {
+            if (etTitulo.text.isEmpty()) {
                 Toast.makeText(
                     (activity as MainActivity),
-                    "Inserta todos los campos",
+                    "Tarea vacía. Rellena el campo",
                     Toast.LENGTH_LONG
                 ).show()
             } else {
                 (activity as MainActivity).miViewModel.insertar(
-                    Pelicula(
-                        "",
+                    Tarea(
+                        //"",
                         etTitulo.text.toString(),
-                        etGenero.text.toString(),
-                        etEstreno.text.toString()
                     )
                 )
                 findNavController().navigate(R.id.action_editFragment_to_SecondFragment)
@@ -88,19 +82,17 @@ class EditFragment : Fragment() {
         }
 
         bModificar.setOnClickListener() {
-            if (peli.titulo == etTitulo.text.toString() && peli.genero == etGenero.text.toString() && peli.estreno == etEstreno.text.toString()) {
+            if (peli.tarea == etTitulo.text.toString()) {
                 Toast.makeText(
                     (activity as MainActivity),
-                    "Modifica algún campo",
+                    "Tarea no modificada",
                     Toast.LENGTH_LONG
                 ).show()
             } else {
                 (activity as MainActivity).miViewModel.modificar(
-                    Pelicula(
-                        "",
+                    Tarea(
+                        //"",
                         etTitulo.text.toString(),
-                        etGenero.text.toString(),
-                        etEstreno.text.toString()
                     ), posicion
                 )
                 findNavController().navigate(R.id.action_editFragment_to_SecondFragment)

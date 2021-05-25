@@ -9,6 +9,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.ejercicio_14.QuizTest.Quiz
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 /**
@@ -17,7 +18,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 class FourthFragment : Fragment() {
 
     private lateinit var miRecyclerView: RecyclerView
-    private lateinit var dataset: List<Pelicula>
+    private lateinit var dataset: List<Quiz>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +28,7 @@ class FourthFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        dataset = GetPeliculas()
+        dataset = GetQuiz()
         // Inflate the layout for this fragment
         val rootView = inflater.inflate(R.layout.fragment_fourth, container, false).apply{}
         miRecyclerView=rootView.findViewById(R.id.myRecyclerView3)

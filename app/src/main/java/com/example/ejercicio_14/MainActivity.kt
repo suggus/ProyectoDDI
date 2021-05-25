@@ -1,10 +1,15 @@
 package com.example.ejercicio_14
 
+import android.app.Activity
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import androidx.activity.viewModels
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.NavHostFragment.findNavController
+import androidx.navigation.fragment.findNavController
 import com.example.ejercicio_14.QuizTest.QuestionRepository
 import com.example.ejercicio_14.QuizTest.QuestionRoomDatabase
 import com.example.ejercicio_14.QuizTest.QuestionViewModel
@@ -47,8 +52,8 @@ class MainActivity : AppCompatActivity() {
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
             R.id.action_settings -> true
+            R.id.itBiblioteca -> true
             else -> super.onOptionsItemSelected(item)
         }
     }
-
 }

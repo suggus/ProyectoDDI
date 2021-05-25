@@ -12,6 +12,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.ejercicio_14.QuizTest.Quiz
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 /**
@@ -214,6 +215,140 @@ private fun PeliculaList(): List<Pelicula> {
     return lista
 }
 
+private fun QuizList(): List<Quiz> {
+    val lista = mutableListOf<Quiz>()
+    lista.add(
+        Quiz(
+            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
+            "Android Studio",
+            "Mobil Apps",
+            "1999"
+        )
+    )
+    lista.add(
+        Quiz(
+            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
+            "Drácula",
+            "Terror",
+            "1992"
+        )
+    )
+    lista.add(
+        Quiz(
+            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
+            "Rambo II",
+            "Acción",
+            "1996"
+        )
+    )
+    lista.add(
+        Quiz(
+            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
+            "Terminator II",
+            "Acción",
+            "1991"
+        )
+    )
+    lista.add(
+        Quiz(
+            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
+            "Pulp Fiction",
+            "Suspense",
+            "1994"
+        )
+    )
+    lista.add(
+        Quiz(
+            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
+            "El show de Truman",
+            "Comedia",
+            "1998"
+        )
+    )
+    lista.add(
+        Quiz(
+            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
+            "Forrest Gump",
+            "Biografía",
+            "1994"
+        )
+    )
+    lista.add(
+        Quiz(
+            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
+            "Parque Jurásico",
+            "Aventuras",
+            "1993"
+        )
+    )
+    lista.add(
+        Quiz(
+            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
+            "American Beauty",
+            "comedia/drama",
+            "1999"
+        )
+    )
+    lista.add(
+        Quiz(
+            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
+            "Matrix",
+            "Ciencia Ficción",
+            "1999"
+        )
+    )
+    lista.add(
+        Quiz(
+            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
+            "Jumanji",
+            "Aventuras",
+            "1999"
+        )
+    )
+    lista.add(
+        Quiz(
+            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
+            "El señor de los Anillos",
+            "Fantasía",
+            "2001"
+        )
+    )
+    lista.add(
+        Quiz(
+            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
+            "Las Crónicas de Narnia",
+            "Fantasía",
+            "2005"
+        )
+    )
+    lista.add(
+        Quiz(
+            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
+            "Piratas del Caribe",
+            "Aventuras",
+            "2003"
+        )
+    )
+    lista.add(
+        Quiz(
+            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
+            "Apocalypse Now",
+            "Bélica",
+            "1979"
+        )
+    )
+    lista.add(
+        Quiz(
+            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
+            "Centauros del Desierto",
+            "Western",
+            "1956"
+        )
+    )
+
+    return lista
+}
+
 private fun CancionList(): List<Cancion> {
     val lista = mutableListOf<Cancion>()
     lista.add(
@@ -326,7 +461,10 @@ private fun LibroList(): List<Libro> {
 
 public fun GetPeliculas(): List<Pelicula> {
     return PeliculaList()
+}
 
+public fun GetQuiz(): List<Quiz> {
+    return QuizList()
 }
 
 public fun GetCanciones(): List<Cancion> {

@@ -4,17 +4,17 @@
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Todo Tasks</string>
+    <string name="next">Tareas</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Bienvenido a tu Videoclub favorito</string>
+    <string name="hello_first_fragment">Charming Notes</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="ver_pel_culas2">Ver Películas 2</string>
+    <string name="ver_pel_culas2">Mis Películas</string>
     <string name="ver_pel_culas3">Quiz Tests</string>
     <string name="a_adir_pel_cula">Añadir Película</string>
-    <string name="hint_pelicula">Película a añadir...</string>
+    <string name="hint_pelicula">Tarea a añadir...</string>
     <string name="button_save">Guardar</string>
     <string name="g_nero">Género</string>
     <string name="estreno">Estreno</string>
