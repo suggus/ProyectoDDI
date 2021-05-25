@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/big_padding"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:minHeight="@dimen/min_height"
+            android:text="@string/hello_first_fragment"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/big_padding"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/usuario"
+            android:inputType="textAutoComplete"
+            android:minHeight="@dimen/min_height"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_contrasenya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/big_padding"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/contrase_a"
+            android:inputType="textPassword"
+            android:minHeight="@dimen/min_height"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btt_insertar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/big_padding"
+            android:background="@color/purple_500"
+            android:text="@string/login"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Ver Menú" />
+
+        <Button
+            android:id="@+id/button_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/next" />
+
+        <Button
+            android:id="@+id/button_third"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/ver_pel_culas2" />
+
+        <Button
+            android:id="@+id/button_fifth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Ver Canciones 2" />
+
+        <Button
+            android:id="@+id/button_sixth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Ver Libros 2" />
+
+        <Button
+            android:id="@+id/button_fourth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/ver_pel_culas3" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

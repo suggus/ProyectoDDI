@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.ejercicio_14.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first"
+        app:startDestination="@id/action_FirstFragment_to_viewPagerFragment">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_fourthFragment"
+            app:destination="@id/fourthFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_passwordFragment"
+            app:destination="@id/passwordFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.ejercicio_14.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.example.ejercicio_14.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_thirdFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_editFragment2"
+            app:destination="@id/editFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.ejercicio_14.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="imagen"
+            android:defaultValue="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXzvfmRZUIV1JQTFpPTQYAMXHzt7g2AcFEiw&amp;usqp=CAU">
+        </argument>
+    </fragment>
+    <fragment
+        android:id="@+id/fourthFragment"
+        android:name="com.example.ejercicio_14.FourthFragment"
+        android:label="FourthFragment"
+        tools:layout="@layout/fragment_fourth">
+        <action
+            android:id="@+id/action_fourthFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+        <action
+            android:id="@+id/action_fourthFragment_to_quizQuestionsFragment"
+            app:destination="@id/quizQuestionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.example.ejercicio_14.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" >
+        <action
+            android:id="@+id/action_editFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordFragment"
+        android:name="com.example.ejercicio_14.PasswordFragment"
+        android:label="fragment_password"
+        tools:layout="@layout/fragment_password" >
+        <action
+            android:id="@+id/action_passwordFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment2"
+        android:name="com.example.ejercicio_14.EditFragment2"
+        android:label="EditFragment2" >
+        <action
+            android:id="@+id/action_editFragment2_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.ejercicio_14.ViewPager.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_viewPagerFragment_to_thirdFragment2"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizQuestionsFragment"
+        android:name="com.example.ejercicio_14.QuizTest.QuizQuestionsFragment"
+        android:label="fragment_quiz_questions"
+        tools:layout="@layout/fragment_quiz_questions" />
+
+</navigation>

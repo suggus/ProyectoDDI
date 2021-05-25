@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3sp"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    tools:ignore="ExtraText">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgCircleView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/ic_launcher"/>
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tvwTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="3dp"
+            android:textStyle="bold"
+            android:hint="Título"/>
+
+        <TextView
+            android:id="@+id/tvwGenero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="3dp"/>
+
+        <TextView
+            android:id="@+id/tvwEstreno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="3dp"/>
+    </LinearLayout>
+</LinearLayout>

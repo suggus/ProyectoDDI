@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="4dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/fondoImagen"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fondoTitulo"
+            android:layout_alignBottom="@+id/fondoImagen"
+            android:layout_alignParentStart="true"
+            android:background=" #33000000"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:text="Delfín"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fondoGenero"
+            android:layout_below="@+id/fondoImagen"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Genero de los delfines"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fondoEstreno"
+            android:layout_below="@+id/fondoGenero"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal"
+            android:text="Estreno de los delfines"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
