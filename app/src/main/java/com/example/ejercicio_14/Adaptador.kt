@@ -16,14 +16,10 @@ class Adaptador(private val myDataSet: MutableList<Tarea>, val actividad: Activi
     inner class ViewHolder(v: View) : RecyclerView.ViewHolder(v) {
 
         val tvTitulo: TextView
-        val tvGenero: TextView
-        val tvEstreno: TextView
         var posicion: Int
 
         init {
             tvTitulo = v.findViewById(R.id.tvTitulo)
-            tvGenero = v.findViewById(R.id.tvGenero)
-            tvEstreno = v.findViewById(R.id.tvEstreno)
             posicion = 0
 
             //Gestionamos la opción onClick para cada elemento holder del RecyclerView

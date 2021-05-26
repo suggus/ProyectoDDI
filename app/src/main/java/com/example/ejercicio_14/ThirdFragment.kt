@@ -85,14 +85,6 @@ private fun PeliculaList(): List<Pelicula> {
     val lista = mutableListOf<Pelicula>()
     lista.add(
         Pelicula(
-            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
-            "Android Studio",
-            "Mobil Apps",
-            "2000"
-        )
-    )
-    lista.add(
-        Pelicula(
             "https://decine21.com/img/upload/obras/dracula-de-bram-stoker-3159/dracula-de-bram-stoker-3159-c.jpg",
             "Drácula",
             "Terror",
@@ -227,65 +219,65 @@ private fun QuizList(): List<Quiz> {
     )
     lista.add(
         Quiz(
-            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
-            "Drácula",
-            "Terror",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/230px-HTML5_logo_and_wordmark.svg.png",
+            "Html",
+            "Lenguaje Marcas",
             "1992"
         )
     )
     lista.add(
         Quiz(
-            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
-            "Rambo II",
-            "Acción",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9B6iGiWJgAso-MytnEyMFb0HmD7qbYiK-Q&usqp=CAU",
+            "CSS",
+            "Lenguaje Marcas",
             "1996"
         )
     )
     lista.add(
         Quiz(
-            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
-            "Terminator II",
-            "Acción",
-            "1991"
+            "https://www.silicon.es/wp-content/uploads/2016/10/linux-logo-2-684x500.png",
+            "Linux",
+            "Programación",
+            "1999"
         )
     )
     lista.add(
         Quiz(
-            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
-            "Pulp Fiction",
-            "Suspense",
+            "https://programaenlinea.net/wp-content/uploads/2020/03/visual-studio-2013-logo.png",
+            "Visual Studio",
+            "Lenguaje Programación",
             "1994"
         )
     )
     lista.add(
         Quiz(
-            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
-            "El show de Truman",
-            "Comedia",
+            "https://unity.com/logo-unity-web.png",
+            "Unity",
+            "Juegos",
             "1998"
         )
     )
     lista.add(
         Quiz(
-            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
-            "Forrest Gump",
-            "Biografía",
+            "https://cms-assets.tutsplus.com/uploads/users/769/posts/25334/preview_image/get-started-with-laravel-6-400x277.png",
+            "Laravel",
+            "Web Development",
             "1994"
         )
     )
     lista.add(
         Quiz(
-            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
-            "Parque Jurásico",
-            "Aventuras",
+            "https://i.blogs.es/6091fa/java/450_1000.jpg",
+            "Java",
+            "Lenguaje Programación",
             "1993"
         )
     )
     lista.add(
         Quiz(
-            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
-            "American Beauty",
-            "comedia/drama",
+            "https://i0.wp.com/unaaldia.hispasec.com/wp-content/uploads/2019/06/django.png?fit=1200%2C800&ssl=1&w=640",
+            "Django",
+            "Web Framework",
             "1999"
         )
     )
@@ -299,49 +291,49 @@ private fun QuizList(): List<Quiz> {
     )
     lista.add(
         Quiz(
-            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
-            "Jumanji",
-            "Aventuras",
+            "https://noviello.it/content/images/2020/12/php-1.jpg",
+            "PHP",
+            "Backend",
             "1999"
         )
     )
     lista.add(
         Quiz(
-            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
-            "El señor de los Anillos",
-            "Fantasía",
+            "https://2.bp.blogspot.com/-14deW6jye1I/XC4wFwitcPI/AAAAAAAAUzw/xKyIF-NcuWM9okIs5sF1pXfWlanTj4Z6gCLcBGAs/s1600/swift-og.png",
+            "Swift",
+            "Lenguaje programación",
             "2001"
         )
     )
     lista.add(
         Quiz(
-            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
-            "Las Crónicas de Narnia",
-            "Fantasía",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px-Python.svg.png",
+            "Python",
+            "Lenguaje Programación",
             "2005"
         )
     )
     lista.add(
         Quiz(
-            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
-            "Piratas del Caribe",
-            "Aventuras",
+            "https://blog.sosafeapp.com/content/images/2020/04/blog---mi-primera-app-en-Kotlin.png",
+            "kotlin",
+            "Programación",
             "2003"
         )
     )
     lista.add(
         Quiz(
-            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
-            "Apocalypse Now",
-            "Bélica",
+            "https://www.hostingseguro.co/media/site/images/mysql-logo900.jpg",
+            "Mysql",
+            "Base de datos",
             "1979"
         )
     )
     lista.add(
         Quiz(
-            "https://cdn.neow.in/news/images/uploaded/2020/02/1582627771_androidstudio_story.jpg",
-            "Centauros del Desierto",
-            "Western",
+            "https://www.anerbarrena.com/wp-content/uploads/2017/08/programacion-javascript-js-e1503258707880.jpg",
+            "JavaScript",
+            "Frontend",
             "1956"
         )
     )
@@ -449,7 +441,7 @@ private fun LibroList(): List<Libro> {
     lista.add(
         Libro(
             2,
-            "https://th.bing.com/th/id/OIP.fvtfiPqylsVT1F_XUfL87wHaMM?w=182&h=300&c=7&o=5&dpr=1.25&pid=1.7",
+            "https://www.disco100.com/media/catalog/product/cache/c0af96276a9645a9ee076389055e2eec/0/6/0602537617036.jpg",
             "El Hobbit",
             "Ficción",
             "1984"
