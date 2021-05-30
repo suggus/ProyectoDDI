@@ -37,7 +37,7 @@ class FourthFragment : Fragment() {
         miRecyclerView.adapter = Adaptador3(activity as MainActivity,dataset, activity as MainActivity)
 
         rootView.findViewById<FloatingActionButton>(R.id.fab4).setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_editFragment)
+            findNavController().navigate(R.id.action_fourthFragment_to_editFragment4)
         }
 
         return rootView

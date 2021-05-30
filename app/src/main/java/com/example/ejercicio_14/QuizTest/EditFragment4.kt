@@ -32,20 +32,22 @@ class EditFragment4 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_edit2, container, false)
+        return inflater.inflate(R.layout.fragment_edit4, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val bInsertar = view.findViewById<Button>(R.id.btt_insertar2)
-        val bBorrar = view.findViewById<Button>(R.id.btt_borrar2)
-        val bModificar = view.findViewById<Button>(R.id.btt_modificar2)
-        val etImagen = view.findViewById<EditText>(R.id.et_imagen_libro)
-        val etTitulo = view.findViewById<EditText>(R.id.et_nombre_libro)
-        val etGenero = view.findViewById<EditText>(R.id.et_genero_libro)
-        val etEstreno = view.findViewById<EditText>(R.id.et_estreno_libro)
-        val tvId = view.findViewById<TextView>(R.id.tv_Id2)
+        val bInsertar = view.findViewById<Button>(R.id.btt_insertar4)
+        val bBorrar = view.findViewById<Button>(R.id.btt_borrar4)
+        val bModificar = view.findViewById<Button>(R.id.btt_modificar4)
+        val etPregunta = view.findViewById<EditText>(R.id.et_question)
+        val etOpcion1 = view.findViewById<EditText>(R.id.et_option1)
+        val etOpcion2 = view.findViewById<EditText>(R.id.et_option2)
+        val etOpcion3 = view.findViewById<EditText>(R.id.et_option3)
+        val etOpcion4 = view.findViewById<EditText>(R.id.et_option4)
+        val tvId = view.findViewById<TextView>(R.id.tv_Id4)
+/*
 
         posicion = arguments?.getInt("id") ?: -1
         var liburua: Libro = Libro(0, "", "", "","")
@@ -128,5 +130,7 @@ class EditFragment4 : Fragment() {
                 findNavController().navigate(R.id.action_editFragment2_to_thirdFragment)
             }
         }
+
+ */
     }
 }

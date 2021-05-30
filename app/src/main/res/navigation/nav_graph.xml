@@ -69,11 +69,11 @@
         android:label="FourthFragment"
         tools:layout="@layout/fragment_fourth">
         <action
-            android:id="@+id/action_fourthFragment_to_editFragment"
-            app:destination="@id/editFragment" />
-        <action
             android:id="@+id/action_fourthFragment_to_quizQuestionsFragment"
             app:destination="@id/quizQuestionsFragment" />
+        <action
+            android:id="@+id/action_fourthFragment_to_editFragment4"
+            app:destination="@id/editFragment4" />
     </fragment>
     <fragment
         android:id="@+id/editFragment"
@@ -130,5 +130,10 @@
             android:id="@+id/action_quizResultFragment_to_fourthFragment"
             app:destination="@id/fourthFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/editFragment4"
+        android:name="com.example.ejercicio_14.QuizTest.EditFragment4"
+        android:label="fragment_edit4"
+        tools:layout="@layout/fragment_edit4" />
 
 </navigation>
