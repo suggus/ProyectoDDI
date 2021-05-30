@@ -10,6 +10,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.core.content.ContextCompat
+import androidx.core.os.bundleOf
+import androidx.navigation.fragment.findNavController
 import com.example.ejercicio_14.Libro
 import com.example.ejercicio_14.MainActivity
 import com.example.ejercicio_14.R
@@ -35,6 +37,7 @@ class QuizQuestionsFragment : Fragment(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
     }
 
     override fun onCreateView(
@@ -177,10 +180,14 @@ class QuizQuestionsFragment : Fragment(), View.OnClickListener {
                             setQuestion()
                         }
                         else -> {
+/*
                             Toast.makeText(
                                 activity,
                                 "You have successfully completed the Quiz", Toast.LENGTH_SHORT
                             ).show()
+*/
+                            val bundle = bundleOf("correct_answers" to mCorrectAnswers,"total_questions" to mQuestionList.size.toString(), "total" to mQuestionList.size)
+                            findNavController().navigate(R.id.action_quizQuestionsFragment_to_quizResultFragment, bundle)
                         }
                     }
                     //The user has selected an option

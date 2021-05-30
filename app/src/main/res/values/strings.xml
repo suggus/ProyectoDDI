@@ -28,4 +28,9 @@
     <string name="imagen_libro">Imagen Libro</string>
     <string name="buscar">Buscar</string>
 
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">ogsKCPLLh7DqkblqxITJVZi3JtJQ5MNjUSKy2405</string>
+    <string name="back4app_client_key">4l7yv4tlbAFtSHmpN2RuTnRngjd0jwNCoTo1iKdQ</string>
+
 </resources>

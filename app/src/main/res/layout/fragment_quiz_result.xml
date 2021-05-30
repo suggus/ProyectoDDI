@@ -46,6 +46,7 @@
         android:textSize="22sp"
         android:textStyle="bold"
         tools:text="Username"/>
+
     <TextView
         android:id="@+id/tv_score"
         android:layout_width="wrap_content"
@@ -55,6 +56,14 @@
         android:textSize="20sp"
         tools:text="Your score is 9 out of 10"/>
 
+    <RatingBar
+        android:id="@+id/rb_Valoracion"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="40dp"
+        android:numStars="5"
+        android:stepSize="0.1"/>
+
     <Button
         android:id="@+id/btn_finish"
         android:layout_width="match_parent"
@@ -62,14 +71,8 @@
         android:layout_marginTop="10dp"
         android:background="@color/white"
         android:text="FINISH"
-        android:textColor="@color/design_default_color_primary"
+        android:textColor="@color/purple_700"
         android:textSize="18sp"
         android:textStyle="bold"/>
-
-
-
-
-
-
 
 </LinearLayout>

@@ -117,6 +117,18 @@
         android:id="@+id/quizQuestionsFragment"
         android:name="com.example.ejercicio_14.QuizTest.QuizQuestionsFragment"
         android:label="fragment_quiz_questions"
-        tools:layout="@layout/fragment_quiz_questions" />
+        tools:layout="@layout/fragment_quiz_questions" >
+        <action
+            android:id="@+id/action_quizQuestionsFragment_to_quizResultFragment"
+            app:destination="@id/quizResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizResultFragment"
+        android:name="com.example.ejercicio_14.QuizTest.QuizResultFragment"
+        android:label="QuizResultFragment" >
+        <action
+            android:id="@+id/action_quizResultFragment_to_fourthFragment"
+            app:destination="@id/fourthFragment" />
+    </fragment>
 
 </navigation>

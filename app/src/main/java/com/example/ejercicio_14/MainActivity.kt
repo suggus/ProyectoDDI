@@ -13,6 +13,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.ejercicio_14.QuizTest.QuestionRepository
 import com.example.ejercicio_14.QuizTest.QuestionRoomDatabase
 import com.example.ejercicio_14.QuizTest.QuestionViewModel
+import com.parse.ParseInstallation
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
 
@@ -36,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
+        ParseInstallation.getCurrentInstallation().saveInBackground();
     }
 
     //Añadimos el menú al toolbar y ...
